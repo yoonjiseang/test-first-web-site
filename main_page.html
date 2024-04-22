@@ -1,0 +1,161 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>테스트</title>
+
+        <link rel="stylesheet" href="./assets/css/common.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/jquery.fullPage.css">
+        <link rel="stylesheet" href="./assets/swiper/css/swiper.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	    <script type="text/javascript" src="./assets/scripts/script.js"></script>
+
+	    <script type="text/javascript" src="./assets/js/scrolloverflow.js"></script>
+	    <script type="text/javascript" src="./assets/js/jquery.fullPage.js"></script>
+	    <script type="text/javascript" src="./assets/swiper/js/swiper.js"></script>
+    </head>
+    <body class="main-page" style="overflow: visible; height: initial;">
+        <div class="ham on">
+            <img class="pc680_only" src="https://dream9p.sesisoft.com/assets/images/ham.png" alt="">
+            <img class="mo680_only" src="https://dream9p.sesisoft.com/assets/images/ham_mo.png" alt="">
+        </div>
+
+        <ul class="nav on">
+            <!-- <li class="ham_close ">
+                <img src="./assets/images/ham_close.png" alt="">
+            </li> -->
+            <!--<li class="ham_logo">
+                <img style src="./assets/images/ham_logo.png" alt="">
+            </li>
+            이미지-->
+            <li class="one on"><a class="ham_just_close" href="#page1">메인</a></li>
+            <li class="four"><a class="ham_just_close" href="#page2">스토리</a></li>
+            <li class="five"><a class="ham_just_close" href="#page3">캐릭터 소개</a></li>
+            <li class="six" style="border: none;"><a class="ham_just_close" href="#page4">게임 소개</a></li>
+            <li class="sns" style="border: none;">
+                <a href="https://game.naver.com/lounge/dream9p/board/3" target="_blank" class="ham_just_close"><img src="https://dream9p.sesisoft.com/assets/images/fbanner.png" alt=""></a>
+            </li>
+        </ul>
+
+        <div id="fullPage" class="fullPage-wrapper" style="height: 100%; position: relative; transform: translate3d(0px, 0px, 0px); touch-action: none; transition: all 700ms ease 0s;">
+            <!--인트로-->
+            <div class="section " id="section1" style="background: url(./assets/images/sec1_bg.png) no-repeat top center; background-size: cover;">
+                <!-- 메인 배경 영상 -->
+                <div class="video-background">
+                    <div class="shadow"></div>
+                    <div style="text-align: center;" class="video-foreground">
+                        <iframe width="100%" height="1080" data-keepplaying="" src="https://www.youtube.com/embed/lPP-u9kS-dA?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=lPP-u9kS-dA&amp;controls=0&amp;enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" id="video_0"></iframe>
+                    </div>
+                </div>
+
+                <!-- 인트로 UI -->        
+                <div class="intro wrap_center">
+                    <div class="play ani4" id="play">
+                        <a class="modal_step_open2" modal_step="Video">
+                            <img src="https://dream9p.sesisoft.com/assets/images/btn.png" alt="">
+                            <img class="eft" src="./assets/images/btn_eft.png" alt="">
+                        </a>
+                    </div>
+                    <div class="logo ani7"><img src="./assets/images/sec1_logo.png" alt=""></div>
+
+                    <div class="btn ani10">
+                        <a href="" target="_blank"><img src="https://dream9p.sesisoft.com/assets/images/sec1_snsbtn_01.png" alt=""></a>
+                        <a href="" target="_blank"><img src="https://dream9p.sesisoft.com/assets/images/sec1_snsbtn_02.png" alt=""></a>
+                        <a href="" target="_blank"><img src="https://dream9p.sesisoft.com/assets/images/sec1_snsbtn_03.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!--인트로//-->
+
+            <!--스토리-->
+            <div class="section fp-section fp-table" id="section_story" style="background: url(&quot;./assets/images/story_bg.png&quot;) center center / cover no-repeat; height: 953px;" data-anchor="page2"><div class="fp-tableCell" style="height: 953px;">
+                <div class="wrap_center">
+                    <div class="tit type2 fade fade4">
+                        <img src="https://dream9p.sesisoft.com/assets/images/story_tit.png" alt="">
+                    </div>		
+                    <div class="story_txt fade fade7">
+                        <img class="pc_only" src="https://dream9p.sesisoft.com/assets/images/story_txt.png" alt="">
+                        <img class="mo_only" src="https://dream9p.sesisoft.com/assets/images/story_txt_mo.png" alt="">
+                    </div>
+                    <div class="story_bg1">
+                        <img class="pc680_only fade fade10" src="https://dream9p.sesisoft.com/assets/images/story_bg1.png" alt="">
+                        <img class="mo680_only fade fade10" src="https://dream9p.sesisoft.com/assets/images/story_bg1_mo.png" alt="">
+                    </div>
+                    <div class="arrowarrow">
+                        <a href="#page3">
+                            <img src="https://dream9p.sesisoft.com/assets/images/arrowarrow.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div></div>
+            <!--스토리//-->
+
+            <!--정보-->
+            <div class="section fp-section fp-table active fp-completely" id="section3" style="background: url(&quot;./assets/images/sec3_bg.png&quot;) center center / cover no-repeat; height: 953px;" data-anchor="page2"><div class="fp-tableCell" style="height: 953px;">
+
+                <div class="colorbg sec3_colorbg fade fade11">
+                    <img src="./_html/assets/images/sec3_colorbg.png" alt="">
+                </div>			
+                <div class="wrap">
+                    <div class="tit fade fade4">
+                        <h5>
+                            뿌요뿌요!! 퀘스트를 소개합니다!
+                        </h5>
+                        <img src="./_html/assets/images/sec3_tit.png" alt="">
+                        <p>
+                            [ 뿌요뿌요!! 퀘스트 ] 는 뿌요뿌요 시리즈를 기반으로 만든<br class="mo680_only"> 모바일 게임입니다.<br>
+                            간단 조작으로 플레이가 가능한 퍼즐RPG로<br class="mo680_only"> 다양한 퀘스트에 도전하거나 친구,길드와 함께 즐길 수 있습니다. 					
+                        </p>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="slide_wrap">
+                        <div class="swiper gallery_slide fade fade7 swiper-container-coverflow swiper-container-3d swiper-container-initialized swiper-container-horizontal">
+                            <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2850px, 0px, 0px); perspective-origin: 3455px 50%;"><div class="swiper-slide swiper-slide-duplicate" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, -1469.53px) rotateX(0deg) rotateY(0deg); z-index: -14; margin-right: -355px;" data-swiper-slide-index="4">
+                                    <img src="./_html/assets/images/sec3_img5.jpg" alt="">
+                                </div><div class="swiper-slide swiper-slide-duplicate" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, -1335.94px) rotateX(0deg) rotateY(0deg); z-index: -12; margin-right: -355px;" data-swiper-slide-index="5">
+                                    <img src="./_html/assets/images/sec3_img6.jpg" alt="">
+                                </div><div class="swiper-slide swiper-slide-duplicate" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, -1202.34px) rotateX(0deg) rotateY(0deg); z-index: -11; margin-right: -355px;" data-swiper-slide-index="6">
+                                    <img src="./_html/assets/images/sec3_img7.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate-prev" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, -1068.75px) rotateX(0deg) rotateY(0deg); z-index: -10; margin-right: -355px;" data-swiper-slide-index="0">
+                                    <img src="./_html/assets/images/sec3_img1.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate-active" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, -935.156px) rotateX(0deg) rotateY(0deg); z-index: -8; margin-right: -355px;" data-swiper-slide-index="1">
+                                    <img src="./_html/assets/images/sec3_img2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate-next" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, -801.562px) rotateX(0deg) rotateY(0deg); z-index: -7; margin-right: -355px;" data-swiper-slide-index="2">
+                                    <img src="./_html/assets/images/sec3_img3.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, -667.969px) rotateX(0deg) rotateY(0deg); z-index: -6; margin-right: -355px;" data-swiper-slide-index="3">
+                                    <img src="./_html/assets/images/sec3_img4.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, -534.375px) rotateX(0deg) rotateY(0deg); z-index: -4; margin-right: -355px;" data-swiper-slide-index="4">
+                                    <img src="./_html/assets/images/sec3_img5.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, -400.781px) rotateX(0deg) rotateY(0deg); z-index: -3; margin-right: -355px;" data-swiper-slide-index="5">
+                                    <img src="./_html/assets/images/sec3_img6.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide on" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, -267.188px) rotateX(0deg) rotateY(0deg); z-index: -2; margin-right: -355px;" data-swiper-slide-index="6">
+                                    <img src="./_html/assets/images/sec3_img7.jpg" alt="">
+                                </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev on" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, -133.594px) rotateX(0deg) rotateY(0deg); z-index: 0; margin-right: -355px;" data-swiper-slide-index="0">
+                                    <img src="./_html/assets/images/sec3_img1.jpg" alt="">
+                                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-active" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); z-index: 1; margin-right: -355px;" data-swiper-slide-index="1">
+                                    <img src="./_html/assets/images/sec3_img2.jpg" alt="">
+                                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-next on" style="background: url(&quot;./assets/images/sec5_img.png&quot;) center center / cover no-repeat; width: 640px; transition-duration: 0ms; transform: translate3d(0px, 0px, -133.594px) rotateX(0deg) rotateY(0deg); z-index: 0; margin-right: -355px;" data-swiper-slide-index="2">
+                                    <img src="./_html/assets/images/sec3_img3.jpg" alt="">
+                                </div></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                        <div class="swiper-button-next swiper-button-next3" tabindex="0" role="button" aria-label="Next slide"></div>
+                        <div class="swiper-button-prev swiper-button-prev3" tabindex="0" role="button" aria-label="Previous slide"></div>
+                    </div>
+                </div>
+            </div></div>
+            <!--정보//-->
+        </div>
+    </body>
+</html>

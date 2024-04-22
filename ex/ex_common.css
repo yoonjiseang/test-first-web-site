@@ -1,0 +1,403 @@
+@charset "UTF-8";  
+
+/* font */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css); /* notosanskr */
+@font-face {
+    font-family: "SCDream1";
+    src: url("./font/SCDream1.otf") format("opentype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SCDream2";
+    src: url("./font/SCDream2.otf") format("opentype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SCDream3";
+    src: url("./font/SCDream3.otf") format("opentype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SCDream4";
+    src: url("./font/SCDream4.otf") format("opentype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SCDream5";
+    src: url("./font/SCDream5.otf") format("opentype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SCDream6";
+    src: url("./font/SCDream6.otf") format("opentype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SCDream7";
+    src: url("./font/SCDream7.otf") format("opentype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SCDream8";
+    src: url("./font/SCDream8.otf") format("opentype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SCDream9";
+    src: url("./font/SCDream9.otf") format("opentype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GmarketSansLight";
+    src: url("./font/GmarketSansLight.otf") format("opentype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GmarketSansMedium";
+    src: url("./font/GmarketSansMedium.otf") format("opentype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GmarketSansBold";
+    src: url("./font/GmarketSansBold.otf") format("opentype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "JejuMyeongjo";
+    src: url("./font/JejuMyeongjo-Regular.ttf") format("truetype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "NanumSquare";
+    src: url("./font/NanumSquare.ttf") format("truetype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "NanumSquare_0";
+    src: url("./font/NanumSquare_0.ttf") format("truetype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "NanumSquare_acL";
+    src: url("./font/NanumSquare_acL.ttf") format("truetype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "NanumSquare_acR";
+    src: url("./font/NanumSquare_acR.ttf") format("truetype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "NanumSquare_acB";
+    src: url("./font/NanumSquare_acB.ttf") format("truetype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: "NanumSquare_acEB";
+    src: url("./font/NanumSquare_acEB.ttf") format("truetype"); /* embedded-opentype, opentype, woff, truetype */
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.JejuMyeongjo {
+    font-family: 'JejuMyeongjo', serif;
+}
+
+/* common */
+/* .wrap{width: 1200px; margin: 0 auto;} */
+.wrap_1600{width: 1600px; margin: 0 auto}
+.hidden{display: none !important;}
+.hidden2{opacity: 0; transition: 0.7s;}
+.hidden3{opacity: 0; visibility: hidden;}
+.flex_wrap{display: flex; justify-content: space-between; align-items: center;}
+.mo500_only{display: none !important;}
+.mo680_only{display: none !important;}
+.mo900_only{display: none !important;}
+.mo_only{display: none !important;}
+.mo1300_only{display: none !important;}
+.mo1400_only{display: none !important;}
+
+/* header */
+
+.ham{
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    top: 185px;
+    cursor: pointer;
+    margin-top: 2px;
+    transition: .3s;
+}
+.ham.on{
+    right: 320px;
+}
+
+
+/* footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+footer p.copyrights{
+    text-align: center;
+    font-family: 'Noto Sans KR',serif;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    background: #33201c;
+}
+.top_btn{
+    position: absolute;
+    right: 70px;
+    bottom: 150px;
+}
+
+/* modal */
+.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; z-index: 100; justify-content: center; align-items: center; } 
+.modal_open { cursor:pointer; } 
+.modal_overlay { background-color: rgba(0, 0, 0, 0.8); width:100%; height: 100%; position: absolute; z-index: 24; } 
+.modal_content { background-color: white; text-align: left; position: relative; z-index: 25; } 
+.modal_content .modalContWrap { font-size: 0.9375rem;} 
+.modal .modal_close{    
+    position: absolute;
+    z-index: 50;
+    right: 75px;
+    top: 25px;
+    cursor: pointer;
+}
+/* .modal .modal_close img{width: 1.8125rem;} */
+.modal_content .modalContWrap{font-size: 1.125rem; color: #000;}
+.modal_content .modalContWrapTab { text-align: left; } 
+.modal_content .modal_scroll { height: 31.25rem; overflow-y: scroll; }
+.modal_md { 
+    /* width: 677px; 
+    height: 417px;box-sizing: border-box; */
+    position: relative; 
+    background-size: cover !important;
+} 
+.modal_md .modal_con{
+    width: auto;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50.1%, -50%);
+}
+.modal_md.type1 .modal_con{
+    left: 50%;
+    top: unset;
+    bottom: 100px;
+    transform: translateX(-50.1%);    
+
+}
+
+.modal_md .modal_con .term_txt{
+    width: 580px;
+    height: 230px;
+    overflow: auto;   
+    padding: 15px 10px;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+.modal_md .modal_con .term_wrap::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: -4px;
+    top: 37px;
+    width: 98%;
+    height: 30px;    
+    background: linear-gradient(180deg, #f4eeee, transparent);
+}
+.modal_md .modal_con .term_wrap::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: -4px;
+    bottom: -1px;
+    width: 98%;
+    height: 30px;    
+    background: linear-gradient(0deg, #f3dbdf, transparent);
+}
+.modal_md .modal_con .term_wrap::before,
+.modal_md .modal_con .term_wrap::after { left: -10px; }
+
+.modal_md .modal_con .term_txt pre{
+    white-space: pre-wrap;
+    word-break: break-all;
+    line-height: 1.2;
+    text-align: left;
+    color: #4d453e;
+    padding-bottom: 30px;
+}
+
+
+.modal_md .modal_con .term_tit{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    text-align: left;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+
+.modal_md .modal_con .term_txt pre p{
+    font-size: 15px;
+    line-height: 1.2;
+    color: #3e2723;
+}
+.modal_md.type2 .modal_con .button{
+    /* text-align: right; */
+}
+
+/* .modal_md.type2{
+    width: 692px;    
+}
+.modal_md.type2 .modal_close{
+    right: 0;
+} */
+.modal_md .modal_con .button{
+    margin-top: 45px;
+}
+
+
+
+ /* scrollbar 꾸미기 */
+ .scrollbar::-webkit-scrollbar {
+    width: 5px; /*스크롤바의 너비*/
+    height: auto;
+    cursor: pointer;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #f45078; /*스크롤바의 색상*/
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: #f995ae; /*스크롤바 트랙 색상*/
+    /* border: 2px solid #f995ae; */
+    outline: 5px solid transparent;
+    box-sizing: border-box;
+}
+
+.scrollhidden {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.scrollhidden::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+@media screen and (max-width: 1600px){
+    .wrap_1600{
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 1200px){
+
+    footer p.copyrights{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .mo1400_only{display: block !important;}
+    .pc1400_only{display: none !important;}
+}
+
+@media screen and (max-width: 1300px){
+    .mo1300_only{display: inline-block !important;}
+    .pc1300_only{display: none !important;}
+    .top_btn{
+        bottom: 70px;
+    }
+    .top_btn img{
+        width: 35px;
+    }
+    footer p.copyrights{
+        font-size: min(16px, 2.4vw);
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .mo_only{display: inline-block !important;}
+    .pc_only{display: none !important;}
+}
+
+@media screen and (max-width: 900px){
+    .mo900_only{display: inline-block !important;}
+    .pc900_only{display: none !important;}
+    .top_btn{
+        position: absolute;
+        right: 40px;
+        bottom: 100px;
+    }
+    
+    .hidden2{opacity: 1; transition: 0.7s;}
+}
+
+@media screen and (max-width: 680px){
+    .mo680_only{display: inline-block !important;}
+    .pc680_only{display: none !important;}
+
+    .ham{
+        position: fixed;
+        z-index: 41;
+        cursor: pointer;
+        top: 150px;
+        margin-top: 0;
+    }
+    .ham img{
+        width: 50px !important;
+        opacity: 0;
+    }
+    .ham.on { right: 270px; }
+
+}
+
+@media screen and (max-width: 500px){
+    .mo500_only{display: inline-block !important;}
+    .pc500_only{display: none !important;}
+
+    ul.nav li.ham_close{
+        top: 20px;
+        right: 20px;
+    }
+    .top_btn{
+        position: absolute;
+        right: 20px;
+        bottom: 100px;
+    }
+    .top_btn img{
+        width: 28px;
+    }
+
+}
+@media screen and (max-width: 420px){
+
+}
+
+.scroll_block {
+    cursor: pointer;
+  }
+  .scroll_active {
+    cursor: pointer;
+  }
+  .no_scroll {
+    overflow: hidden;
+  }
